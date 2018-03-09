@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* NOTE: Prevent default style sheet */
+.container-fluid {
+
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .bg-dark {
+    background-color: rgba(0,0,0,0)!important;
+}
+.row{
+  margin-right: 0px;
+margin-left: 0px;
+}
+  /* NOTE: ENd default */
+
+
+.upperSectionIntro{
+
+  background:
+  linear-gradient(
+    rgba(128, 124, 116, 0.45),
+    rgb(0, 0, 0)
+  ),url(icon/headerPicture.jpeg) no-repeat center center fixed;
+
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.intro{
+
+  margin: 0 auto;
+  text-align: center;
+}
+.myImage{
+  margin-top: 40px;
+  width: 190px;
+  height: 190px;
+  border: 5px solid black;
+  border-radius: 50%;
+
+
+}
+.myName{
+  color: white;
+}
+/* NOTE: End main intro */
+
+.myService{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.serviceH{
+  margin-top:15px;
+  margin-bottom: 15px;
+
+
+}
+
+/* NOTE: Work on box */
+
+.box{
+
+  border: 2px solid black;
+
+
+  margin: 4px;
+
+}
+
+
+.webDevelopment{
+
+  background: #3d0021;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+
+
+}
+.imageGalary{
+  margin: 0 auto;
+}
+
+.imgPad{
+  padding: 12px;
+}
