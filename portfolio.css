@@ -89,4 +89,14 @@ margin-left: 0px;
 
 .imgPad{
   padding: 12px;
+  margin: 1px;
+}
+/* NOTE: Set image with on web DEsign sample  */
+.imgWebWidth{
+    width: 300px;
+    height:  150px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
 }
