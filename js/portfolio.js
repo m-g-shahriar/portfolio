@@ -124,11 +124,21 @@ $(function(){
     //Showing twxt on image hoverBox
 
     $('.img-thumbnail0').hover(function(){
-      $('.textShow').show();
+      $('.textShow').show("fast");
     },function(){
-      $('.textShow').hide();
+      $('.textShow').hide("fast");
     });
 
+    //Testing Header personal information
+
+    $('.personal').hover(function(){
+
+        $(this).children('.personalInformation').show();
+
+
+    },function(){
+        $(this).children('.personalInformation').hide();
+    });
 
 
 
