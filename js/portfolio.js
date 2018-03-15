@@ -45,6 +45,89 @@ $(function(){
 
     //boxshowing on web dept hover ENd
 
+//IMage pagination
+
+
+    //var imageAlt = $('.img-thumbnail').attr("alt");
+
+    $('.paginationImg').click(function(){
+
+
+      var buttonHref = $(this).attr("href");
+        //$('.as').hide();
+
+
+
+        if (buttonHref === "#t1") {
+
+            $('.img-thumbnail0').attr("src","icon/71appicon.png");
+
+
+
+        }
+       if (buttonHref === "#t2") {
+          $('.img-thumbnail0').attr("src","icon/anothericonfoeapp.png");
+
+
+
+        }
+        if (buttonHref === "#t3") {
+
+          $('.img-thumbnail0').attr("src","icon/latesign.png");
+
+        }
+        if (buttonHref === "#t4") {
+
+
+          $('.img-thumbnail0').attr("src","icon/logo_by_shr.png");
+
+        }
+        if (buttonHref === "#t5") {
+          $('.img-thumbnail0').attr("src","icon/trying.png");
+
+
+
+
+
+        }
+        if (buttonHref === "#t6") {
+            $('.img-thumbnail0').attr("src","icon/Sicon.jpg");
+
+
+
+
+        }
+        if (buttonHref === "#t7") {
+
+            $('.img-thumbnail0').attr("src","icon/calculator_page_header.png");
+
+
+
+        }
+        if (buttonHref === "#t8") {
+
+
+            $('.img-thumbnail0').attr("src","icon/production.jpg");
+              $('.img-thumbnail0').css({
+                "width":"800px",
+                "height":"500px"
+              });
+
+        }
+
+
+
+    });
+
+    //ENd pagination
+
+    //Showing twxt on image hoverBox
+
+    $('.img-thumbnail0').hover(function(){
+      $('.textShow').show();
+    },function(){
+      $('.textShow').hide();
+    });
 
 
 

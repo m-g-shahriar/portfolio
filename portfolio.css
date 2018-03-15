@@ -19,6 +19,10 @@ p {
     margin-top: 0;
     margin-bottom: 0rem;
 }
+a{
+
+
+}
   /* NOTE: ENd default */
 
 
@@ -124,4 +128,24 @@ p {
 }
 .showingBoxWe{
   width:900px;height:400px;border-radius: 2%;  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+/* NOTE: Image pagination */
+
+.paginationImg{
+
+  text-align: center;
+  background: #dddddd;
+  border-radius: 45%;
+  padding: 5px 11px;
+}
+.paginationImg:hover{
+  background: black;
+  color: white;
+  text-decoration: none;
+  cursor: alias;
+}
+
+.img-thumbnail0{
+  margin-bottom: 15px;
 }
