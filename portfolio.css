@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 body{
   margin: 0;
   padding: 0;
+  background: #f4f4f4;
+}
+.width{
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 /* NOTE: Prevent default style sheet */
 .container-fluid {
@@ -21,7 +29,11 @@ p {
 }
 a{
 
-
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
 }
   /* NOTE: ENd default */
 
@@ -90,6 +102,7 @@ a{
   margin: 0 auto;
 
 
+
 }
 .imageGalary{
   margin: 0 auto;
@@ -148,4 +161,191 @@ a{
 
 .img-thumbnail0{
   margin-bottom: 15px;
+}
+
+/* NOTE: Social icon */
+
+
+
+
+/* NOTE: For web DEv Page */
+nav{
+  position: relative;
+  width: 100%;
+  padding: 0 100px;
+/*  background: #303030; */
+  box-sizing: border-box;
+}
+nav ul{
+  position: relative;
+  text-align: center;
+  padding: 0;
+
+  margin: auto;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+
+  display: block;
+  color: white;
+  padding: 20px;
+  font-family:'Righteous', cursive;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  background: #e0d61f;
+  color: black;
+
+
+}
+
+/* NOTE: Menu button */
+.menuBtDiv{
+
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+  padding: 20px;
+  padding-bottom: 35px;
+  padding-top: 8px;
+
+}
+
+.mButton{
+  background: #e0d61f;
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.show{
+  display: block;
+
+}
+/* NOTE: End menu */
+
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
+.main{
+
+    width: 100%;
+
+}
+.nameBig{
+  height: 100vh;
+   background:#ffe20c;
+   background-attachment: fixed;
+}
+
+.nameTag{
+
+    /* :font-family:'Righteous', cursive;  */
+    font-family: 'Monoton', cursive;
+    font-size: 150px;
+    text-align: center;
+
+}
+.myImageTwo{
+  margin-top: -40px;
+  width: 190px;
+  height: 190px;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.buttonDesign{
+
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonDesign:hover{
+
+    background: black;
+    color: white;
+
+
+}
+
+.web{
+  font-family:'Righteous', cursive;
+}
+.webExample{
+  width: 100%;
+
+}
+/* NOTE: DEsign colum */
+.oneColum{
+  width: 33%;
+  float: left;
+  cursor: pointer;
+}
+.twoColum{
+  width: 34%;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 26px;
+  float: left;
+}
+.child,.child2{
+  background:black;
+  color:white;
+   width:150px;
+    height:150px;
+    position: absolute;
+    display: none;
+    bottom: 50px;
+    left: 150px;
+
+}
+
+/* NOTE: Mobile devices for web dev */
+@media (max-width:720px) {
+
+      .menuBtDiv{
+        display: block;
+      }
+
+      nav{
+
+        padding: 0px;
+
+      }
+      nav ul{
+
+        float: none;
+        display: none;
+      }
+        nav ul li{
+          display: block;
+
+        }
+      nav ul li a{
+        padding: 10px;
+        text-align: center;
+      }
+      nav ul li a.active,
+      nav ul li a:hover{
+        background: #c9222a;
+        color: black;
+
+      }
+      .logoMain{
+
+
+        margin: 6px;
+      }
+
 }
