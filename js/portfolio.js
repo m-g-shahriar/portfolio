@@ -141,6 +141,62 @@ $(function(){
     });
 
 
+    //Looping the social icon
 
+    //for dtetec the scrollingAndroid
+
+
+
+    var dta = 0;
+    setInterval(function(){
+
+        if (dta > 85) {
+            $('.webDEsignRatio').html("85");
+        }
+        if (dta<86) {
+          $('.webDEsignRatio').html(dta);
+          dta++;
+        }
+
+    },60);
+
+
+    // NOTE: For web DevMenu
+
+    console.log("print Web dev");
+
+    $('.mButton').click(function(){
+
+        //$('nav ul').show('fast');
+
+        $('nav ul').toggleClass('show');
+
+        // if ($('nav ul').is(":hidden")) {
+        //     $('nav ul').show("fast");
+        // }
+        // else{
+        //   $('nav ul').hide("fast");
+        // }
+
+
+    });
+
+    // NOTE: FOr web dev image showing on images
+
+    $('.uu').hover(function(){
+        $(".uu").children('.child').show("fast");
+        $('.firstBox').css("margin-right","3px");
+    },function(){
+      $(".uu").children('.child').hide("fast");
+      $('.firstBox').css("margin-right","-3px");
+    });
+
+    $('.uuu').hover(function(){
+        $(".uuu").children('.child2').show("fast");
+        $('.secondBox').css("margin-left","3px");
+    },function(){
+      $(".uuu").children('.child2').hide("fast");
+      $('.secondBox').css("margin-left","-3px");
+    });
 
 });
