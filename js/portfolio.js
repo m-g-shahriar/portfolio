@@ -2,6 +2,8 @@
 $(function(){
 
 
+
+
   var imageBackground = ["icon/0.jpeg","icon/1.jpeg","icon/2.jpeg"];
 
   var count = 0;
@@ -108,10 +110,7 @@ $(function(){
 
 
             $('.img-thumbnail0').attr("src","icon/production.jpg");
-              $('.img-thumbnail0').css({
-                "width":"800px",
-                "height":"500px"
-              });
+
 
         }
 
@@ -141,62 +140,126 @@ $(function(){
     });
 
 
+        // NOTE: For web DevMenu
+
+        console.log("print Web dev");
+
+        $('.mButton').click(function(){
+
+            //$('nav ul').show('fast');
+
+            $('nav ul').toggleClass('show');
+
+
+
+            // if ($('nav ul').is(":hidden")) {
+            //     $('nav ul').show("fast");
+            // }
+            // else{
+            //   $('nav ul').hide("fast");
+            // }
+
+
+        });
+
+        // NOTE: FOr web dev image showing on images
+
+        $('.uu').hover(function(){
+            $(".uu").children('.child').show("fast");
+            $('.firstBox').css("margin-right","3px");
+        },function(){
+          $(".uu").children('.child').hide("fast");
+          $('.firstBox').css("margin-right","-3px");
+        });
+
+        $('.uuu').hover(function(){
+            $(".uuu").children('.child2').show("fast");
+            $('.secondBox').css("margin-left","3px");
+        },function(){
+          $(".uuu").children('.child2').hide("fast");
+          $('.secondBox').css("margin-left","-3px");
+        });
     //Looping the social icon
 
     //for dtetec the scrollingAndroid
 
+    //Detect the Scroll
+
+    //It should be appear  always end of the code 
+
+    $('body,html').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function (event) {
+
+      var passTrue = false;
+
+      var onlyOne = false;
 
 
-    var dta = 0;
-    setInterval(function(){
+      if ($(window).scrollTop() >= ($("#photoshopScroll").offset().top)) {
 
-        if (dta > 85) {
-            $('.webDEsignRatio').html("85");
-        }
-        if (dta<86) {
-          $('.webDEsignRatio').html(dta);
-          dta++;
-        }
-
-    },60);
+          //Web design mapping
+          if (passTrue === false) {
 
 
-    // NOTE: For web DevMenu
+              var dta = 0;
+              var androidData = 0;
+              var pythonRatio = 0;
+              var programmingRatio = 0;
+              setInterval(function(){
 
-    console.log("print Web dev");
+                  if (dta > 85) {
+                      $('.webDEsignRatio').html(dta);
+                  }
+                  if (dta<86) {
+                    $('.webDEsignRatio').html(dta);
+                    dta++;
+                  }
 
-    $('.mButton').click(function(){
+                  //for android
 
-        //$('nav ul').show('fast');
+                  if (androidData > 61) {
 
-        $('nav ul').toggleClass('show');
+                      $('.androidRatio').html(androidData);
 
-        // if ($('nav ul').is(":hidden")) {
-        //     $('nav ul').show("fast");
-        // }
-        // else{
-        //   $('nav ul').hide("fast");
-        // }
+                  }
+                  if (androidData < 61) {
+                    $('.androidRatio').html(androidData);
+                    androidData++;
+                  }
+                  //for python
+                  if (pythonRatio > 45) {
+
+                      $('.pythonRatio').html(pythonRatio);
+
+                  }
+                  if (pythonRatio < 45) {
+                    $('.pythonRatio').html(pythonRatio);
+                    pythonRatio++;
+                  }
+
+                  //for programming
+                  if (programmingRatio > 60) {
+
+                      $('.programmingRatio').html(programmingRatio);
+
+                  }
+                  if (programmingRatio < 60) {
+                    $('.programmingRatio').html(programmingRatio);
+                    programmingRatio++;
+                  }
+
+              },60);
+            passTrue = true;
+
+          }
+          }
+      }).scroll();
 
 
-    });
 
-    // NOTE: FOr web dev image showing on images
 
-    $('.uu').hover(function(){
-        $(".uu").children('.child').show("fast");
-        $('.firstBox').css("margin-right","3px");
-    },function(){
-      $(".uu").children('.child').hide("fast");
-      $('.firstBox').css("margin-right","-3px");
-    });
 
-    $('.uuu').hover(function(){
-        $(".uuu").children('.child2').show("fast");
-        $('.secondBox').css("margin-left","3px");
-    },function(){
-      $(".uuu").children('.child2').hide("fast");
-      $('.secondBox').css("margin-left","-3px");
-    });
+
+
+
 
 });

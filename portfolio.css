@@ -68,6 +68,10 @@ a:hover{
 .myName{
   color: white;
 }
+
+.personalInformation{
+  display:none;position:absolute;top:180px;background:black;padding:10px;font-family:'Righteous', cursive;
+}
 /* NOTE: End main intro */
 
 .myService{
@@ -203,6 +207,13 @@ nav ul li a:hover{
 
 }
 
+/* NOTE: TExt after name */
+
+.textAfterName{
+  width:600px;margin:0 auto; text-align:center;font-size:23px;margin-bottom:25px;
+}
+
+
 /* NOTE: Menu button */
 .menuBtDiv{
 
@@ -314,6 +325,45 @@ p {
 /* NOTE: Mobile devices for web dev */
 @media (max-width:720px) {
 
+  .nameBig{
+    height: 620px;
+     background:#2b2c2d;
+     background-attachment: fixed;
+  }
+
+  .nameTag{
+
+      /* :font-family:'Righteous', cursive;  */
+
+      font-size: 60px;
+      color: white;
+
+
+  }
+  .textAfterName{
+    width: 300px;
+    color: white;
+  }
+  .myImageTwo{
+    margin-top: 10px;
+    border: 5px solid white;
+
+  }
+  .buttonDesign{
+
+    border: 1px solid white;
+    padding: 8px;
+    color: #0052a5;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .oneColum{
+    width: 100%;
+  }
+  .twoColum{
+    width: 100%;
+  }
+
       .menuBtDiv{
         display: block;
       }
@@ -343,9 +393,31 @@ p {
 
       }
       .logoMain{
-
-
         margin: 6px;
       }
+      /* NOTE: photoshop image  */
+
+      .as{
+        margin: 0 auto;
+        width: 300px;
+        height: 280px;
+        margin-bottom: 13px;
+      }
+      /* NOTE: photoshop button  */
+      .paginationImg{
+
+
+
+        margin-bottom: 4px;
+      }
+
+      .personalInformation{
+        top:250px;
+        left: 20px;
+        padding:10px;
+
+
+
+
 
 }
