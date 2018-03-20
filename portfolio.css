@@ -325,6 +325,8 @@ p {
 /* NOTE: Mobile devices for web dev */
 @media (max-width:720px) {
 
+
+
   .nameBig{
     height: 620px;
      background:#2b2c2d;
@@ -395,12 +397,24 @@ p {
       .logoMain{
         margin: 6px;
       }
+
+      /* NOTE:for firstPage.html  */
       /* NOTE: photoshop image  */
+      .imgWebWidth{
+          width: 240px;
+          height:  150px;
+        }
+
+        .androidSectionImg{
+          width: 250px;
+          height: 400px;
+        }
 
       .as{
         margin: 0 auto;
-        width: 300px;
+        width: 250px;
         height: 280px;
+        margin-left: -20px;
         margin-bottom: 13px;
       }
       /* NOTE: photoshop button  */
@@ -417,7 +431,5 @@ p {
         padding:10px;
 
 
-
-
-
+ }
 }
