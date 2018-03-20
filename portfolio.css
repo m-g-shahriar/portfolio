@@ -170,9 +170,20 @@ a:hover{
   margin-bottom: 15px;
 }
 
+/* NOTE: First page footer */
 /* NOTE: Social icon */
+.footerLink{
+  display:block;padding:2px;color:#f20e8b;font-weight:700;
 
+  margin: 1px;
+}
+.footerIcon{
+  width:25px;height:25px;border-radius:50%;border:1px solid white;
 
+}
+footer{
+  background: black;
+}
 
 
 /* NOTE: For web DEv Page */
