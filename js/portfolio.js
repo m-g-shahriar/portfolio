@@ -179,13 +179,49 @@ $(function(){
           $(".uuu").children('.child2').hide("fast");
           $('.secondBox').css("margin-left","-3px");
         });
+
+        //FOr image change on Web dev html page
+
+
+        //webDesign/web1.png
+        //webDesign/2.jpg
+
+        $('.One').click(function(){
+          $('#myVideo').hide('fast');
+          $('#imageForWeb').attr("src","webDesign/Capture.PNG").show('fast');
+          $(".textForClick").html("click again");
+        
+
+        });
+
+        $('.Two').click(function(){
+          $('#myVideo').hide('fast');
+
+          $('#imageForWeb').attr("src","webDesign/3.PNG");
+
+
+        });
+
+        $('.Three').click(function(){
+          $('#myVideo').hide('fast');
+          $('#imageForWeb').attr("src","webDesign/web1.png").show('fast');
+
+        });
+
+        $('.Four').click(function(){
+          $('#myVideo').hide('fast');
+          $('#imageForWeb').attr("src","webDesign/2.jpg").show('fast');
+
+        });
+
+
     //Looping the social icon
 
     //for dtetec the scrollingAndroid
 
     //Detect the Scroll
 
-    //It should be appear  always end of the code 
+    //It should be appear  always end of the code
 
     $('body,html').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function (event) {
 
