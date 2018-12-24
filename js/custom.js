@@ -24,7 +24,7 @@ $(function(){
 
           // NOTE: Box section hover
 
-          $('.boxSection').hover(function(){
+          $('#skills').hover(function(){
                 $('.w').addClass('W_animation');
           },function(){
 
