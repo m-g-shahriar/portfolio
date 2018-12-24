@@ -29,6 +29,7 @@ $(function(){
           },function(){
 
           });
+  
 
           $('.boxStyle').hover(function(){
                 $('.webText').show('slow');
