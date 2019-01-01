@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.appearance{
+  -webkit-appearance:     none;
+    -moz-appearance:        none;
+    -ms-appearance:         none;
+    -o-appearance:          none;
+    appearance:             none;
+}
+
+.headerContainer{
+  background: url(images/bg.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.secondDivHeader img{
+  width: 95%;
+  height: 91vh;
+  float: right;
+  margin-right: -2.3%;
+}
+
+/* NOTE: Navigation style */
+nav{
+  position: relative;
+  width: 100%;
+  padding: 0 ;
+  padding-right: 100px;
+/*  background: #303030; */
+  box-sizing: border-box;
+}
+nav ul{
+  position: relative;
+	float:right;
+  padding: 0;
+
+  margin: auto;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+
+  display: block;
+  color: white;
+  padding-right: 20px;
+  padding-top: 9px;
+  padding-bottom: 7.5px;
+  font-family:'Righteous', cursive;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  transition: .6s;
+  color: black;
+
+
+}
+
+  .active{
+    color:orange;
+  }
+
+
+/* NOTE: Menu button */
+.menuBtDiv{
+
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+  padding: 20px;
+  padding-bottom: 35px;
+  padding-top: 8px;
+
+}
+
+.mButton{
+  color: white;
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+.show{
+  display: block;
+  animation: showingSlow 1s forwards;
+}
+/* NOTE: End menu */
+
+/* NOTE: End nav */
+
+
+.heroTitle h1{
+  margin-top: 17%;
+  font-size:4.5rem;
+  margin-left: 5%;
+  font-stretch: ultra-condensed;;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+.heroTitle p{
+  width: 300px;
+  height: 35px;
+  background: #ef4646;
+  font-size: 19px;
+  padding: 2px;
+  text-align: center;
+  font-style: oblique;
+  margin-left: 5%;
+  color:white;
+}
+
+
+
+@font-face {
+  src: url(font/ufonts.com_avant-g-bold.ttf);
+  font-family: "shahriarFontfav";
+}
+
+/* NOTE: custom buton */
+.button{
+  margin-top:25px;
+}
+.buttonDesign{
+
+  background: #fff0;
+  border: 3px solid white;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.buttonDesign1{
+
+  background: #ff5252;
+
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.buttonDesign:hover, .buttonDesign1:hover{
+
+    background: black;
+    color: white;
+    box-shadow: 2px 2px 4px white;
+
+
+}
+
+/* NOTE: About me */
+
+
+
+.aboutMe{
+  background: #13141d;
+  padding: 55px;
+}
+.aboutMeTitle {
+  color: white;
+  font-family: 'shahriarFontfav';
+  font-size: 39px;
+  text-align: center;
+}
+
+
+.aboutMeTitleP{
+  width: 60%;
+  color: #707079;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.inneraboutMe{
+  background: #1b1c29;
+  padding: 54px;
+}
+
+.inneraboutMe img{
+  width: 90px;
+  height: 90px;
+  float: right;
+}
+.inneraboutMe .leftAboutMe p {
+  float: right;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+}
+.inneraboutMe p span{
+  color:#ff5252;
+}
+
+
+.rightAboutMe {
+  padding: 10px;
+  padding-left: 30px;
+}
+.rightAboutMe h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+}
+.rightAboutMe p{
+  margin-top: 10px;
+    float: left;
+    color: white;
+      font-family: 'Montserrat', sans-serif;
+      width: 100%;
+}
+
+/* NOTE: Skills bar */
+
+.skillsBar{
+  width: 90%;
+  height: 16px;
+  background:#13141d;
+  float: left;
+}
+.innerSk{
+  width: 75%;
+  height: 100%;
+  background: #ff5252;
+  
+}
+
+@keyframes zeroToFull {
+    0%{
+      width: 0;
+    }
+    50%{
+      width: 45%;
+    }
+    100%{
+      width: 100%;
+    }
+}
+
+
+
+.ResponsiveWeb{
+  width: 85%;
+}
+.graphics{
+  width: 89%;
+}
+.SEO{
+    width: 79%;
+}
+.programming{
+  width: 55%;
+}
+
+/* NOTE: Projects */
+
+.projectsLinks{
+    background: #1b1c29;
+    padding: 55px;
+}
+.projectsLinks h2{
+  color: white;
+  font-family: 'shahriarFontfav';
+  font-size: 39px;
+  text-align: center;
+}
+.box{
+  color: #afb0b3;
+  font-family: sans-serif;
+  font-size: 26px;
+  padding: 25px;
+  border-right:3px solid #4a4a4c;
+  text-align: center;
+}
+.box p:hover{
+    cursor: pointer;
+    color:white;
+    transition: 1s;
+}
+.boxLast{
+  border-right:0px solid #4a4a4c;
+}
+/* NOTE: Project details*/
+
+.detailsProject{
+
+    background: #1c1d1f;
+
+}
+
+.detailsProjectPadding{
+  padding: 65px;
+}
+
+.finalYearsDe{
+  display: none;
+  padding: 65px;
+}
+
+
+.imageYr{
+  width: 550px;
+  height: 350px;
+  padding: 10px;
+  border-right: 2px solid #4a4a4c;
+  margin: 4px;
+}
+
+.finalProjectRight{
+  padding: 35px;
+}
+
+.finalProjectRight h3{
+
+  color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:30px;
+}
+.finalProjectRight p{
+  padding-top: 25px;
+  color:white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 45px;
+}
+.exploreBtn{
+
+  font-size: 19px;
+  border: 1px solid #bbbec6;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 15px;
+  background: transparent;
+}
+.exploreBtn:hover{
+  text-decoration: none;
+  color: white;
+  background: #ff5252;
+  transition: 2s;
+}
+
+/* NOTE: Web image */
+.webDesign{
+  display: none;
+  padding: 65px;
+}
+.imageWeb1{
+    background: url('images/web.PNG')center center;
+    width: 100%;
+      height: 250px;
+    background-size: cover;
+
+}
+/* NOTE: Start Hover effect */
+.parent {
+
+overflow: hidden;
+    position: relative;
+	cursor: pointer;
+
+}
+.parent a{
+
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+  text-decoration: none;
+}
+
+.child {
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.parent:hover .child, .parent:focus .child {
+
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+/* NOTE:end Hover Effect */
+
+
+.imageWeb2{
+  background: url('images/web2.PNG')center center;
+  width: 100%;
+  height: 250px;
+background-size: cover;
+}
+.imageWeb3{
+  background: url('images/web3.PNG')center center;
+  width: 100%;
+    height: 250px;
+background-size: cover;
+}
+.webDesign p{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 105px;
+  padding-bottom:45px;
+  width: 360px;
+
+  color:white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* NOTE: Andriud */
+.android{
+  padding: 65px;
+  display: none;
+}
+.android img{
+  margin:0 auto;
+  text-align: center;
+}
+.androidBorder{
+  border-right: 2px solid #585858;
+  border-radius: 3px;
+
+}
+
+/* NOTE: Showing the spefic section web android final Yeras */
+.RowShow{
+  display: flex;
+  animation: showingSlow 2s forwards;
+}
+
+@keyframes showingSlow {
+    0%{
+      opacity: .3
+    }
+    50%{
+      opacity: .7
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+/* NOTE: AmIResponsible */
+.AmIResponsible{
+  background: #13141d;
+  padding: 55px;
+}
+.AmIResponsible h1{
+
+  color: white;
+  font-family: 'shahriarFontfav';
+  font-size: 39px;
+  text-align: center;
+}
+
+.responseBox{
+  margin-top: 94px;
+
+  text-align: center;
+}
+.responseBox h1{
+
+  font-size: 55px;
+  color: #ef4646;
+}
+.responseBox p{
+  color: #bdbfca;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NOTE: Counter */
+.counter{
+  width: 100%;
+  display: block;
+  height: 270px;
+}
+
+.width25{
+  width: 25%;
+  float: left;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+
+  padding: 25px;
+
+}
+.width25 h2{
+  font-size: 65px;
+}
+.width25 p{
+  font-size: 35px;
+  font-family: fantasy;
+}
+/* NOTE: ENd counter */
+
+/* NOTE: Footer */
+footer{
+
+  background: #1b1c29;
+  padding: 45px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul li{
+  list-style: none;
+  color: white;
+
+}
+
+footer i{
+  color:white;border:1px solid white;border-radius:50%;padding:10px;padding-left:15px;padding-right:15px;
+}
+.l{
+  color:white;border:1px solid white;border-radius:50%;padding-left:12px;padding-right:10px;
+}
+.f{
+  padding-left:14px;padding-right:14px;
+}
+
+footer i:hover{
+  color: black;
+  background: white;
+
+}
+
+
+
+/* NOTE: **********************************************88 */
+
+/* NOTE: Responsiv */
+@media (max-width:720px) {
+
+  .headerContainer {
+      background: url(images/mobileBg2.png) center center fixed;
+      background-size: cover;
+
+    }
+
+
+
+  .menuBtDiv{
+     display: block;
+     margin-top: -55px;
+
+   }
+   .mButton:hover {
+     color: #ff5252;
+     transition: .5s;
+
+   }
+
+   nav{
+
+     padding: 0px;
+
+   }
+   nav ul{
+
+     float: none;
+     display: none;
+   }
+     nav ul li{
+       display: block;
+
+     }
+   nav ul li a{
+     padding: 10px;
+     text-align: center;
+   }
+   nav ul li a.active,
+   nav ul li a:hover{
+     background: #c9222a;
+     color: black;
+
+   }
+
+  /* NOTE: End menu */
+
+  /* NOTE: Title */
+
+  .heroTitle{
+    margin-top: 45%;
+  }
+
+  /* NOTE: About me  */
+  .aboutMeTitle {
+
+    font-size: 30px;
+  }
+
+  .aboutMeTitleP {
+    width: 100%;
+
+}
+.inneraboutMe img {
+   float: none;
+}
+.leftAboutMe{
+  width: 100%;
+}
+.inneraboutMe .leftAboutMe p {
+    float: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rightAboutMe {
+    margin-top: 20px;
+    padding: 10px;
+  padding-left: 0px;
+}
+
+
+/* NOTE: Box */
+
+.box {
+
+    border-right: 0px solid #2e2e31;
+    border-block-end: 2px solid #2e2e31;
+    text-align: center;
+}
+.AmIResponsible h1 {
+
+    font-size: 30px;
+
+}
+.responseBox p {
+
+    font-size: 15px;
+
+}
+.counter {
+    width: 100%;
+    display: block;
+    height: inherit;
+}
+.width25 {
+    width: 100%;
+    float: none;
+}
+
+/* NOTE: Footer */
+
+footer{
+  text-align: center;
+}
+
+/* NOTE: Project */
+.imageYr {
+    /* width: 550px; */
+    width: 100%;
+    height: 250px;
+
+}
+.imageWeb {
+
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+/* NOTE: End */
+
+/* NOTE: Remove padding */
+.finalYearsDe{
+
+  padding: 5px;
+}
+.webDesign{
+
+  padding: 5px;
+}
+.android{
+  padding: 5px;
+
+}
+
+
+}
