@@ -68,6 +68,17 @@ $(function(){
 
               }
 
+        
+           if(className=="Gr"){
+                //$('.detailsProject').toggleClass('detailsProjectPadding');
+						$(".photo-gallery").toggleClass('RowShow');
+
+					$(".android").removeClass('RowShow');
+                  $(".finalYearsDe").removeClass('RowShow');
+
+                  $(".webDesign").removeClass('RowShow');
+
+              }
 
 
 
