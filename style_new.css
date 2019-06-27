@@ -166,6 +166,10 @@ nav ul li a:hover{
 
 }
 
+.photo-gallery{
+	display: none;
+}
+
 /* NOTE: About me */
 
 
